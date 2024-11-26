@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package simulacionproyecto;
+ 
+import java.sql.SQLException;
 
 /**
  *
@@ -13,8 +15,10 @@ public class SimulacionProyecto {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) throws SQLException {
+       Conexion con = new Conexion(); 
+       con.conectar();
+       con.desconectar();
     }
     
 }
